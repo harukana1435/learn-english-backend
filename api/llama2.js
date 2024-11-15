@@ -3,6 +3,13 @@ const Replicate = require("replicate");
 const app = express();
 app.use(express.json());
 
+const cors = require("cors");
+app.use(
+  cors({
+    origin: "chrome-extension://enmijodgkcjaikfdjkfceglgpahmlele", // 拡張機能のIDを指定
+  })
+);
+
 // Replicateのインスタンスを作成
 const replicate = new Replicate();
 
