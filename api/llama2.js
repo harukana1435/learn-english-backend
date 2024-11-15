@@ -1,5 +1,6 @@
+import Replicate from "replicate";
+const replicate = new Replicate();
 const express = require("express");
-const Replicate = require("replicate");
 const app = express();
 app.use(express.json());
 
@@ -9,9 +10,6 @@ app.use(
     origin: "chrome-extension://enmijodgkcjaikfdjkfceglgpahmlele", // 拡張機能のIDを指定
   })
 );
-
-// Replicateのインスタンスを作成
-const replicate = new Replicate();
 
 app.post("/api/llama2", async (req, res) => {
   try {
