@@ -31,24 +31,24 @@ app.post("/api/gemini", async (req, res) => {
           - その単語を使った英語の例文とその和訳も提供してください。
       3. 慣用句や特殊なフレーズ: 文章内にある慣用句や特殊なフレーズがあれば、それらの意味を説明してください。
 
-      次のような形式で出力してください。各項目の最後に'|'を付け足して。太字つまり*text*を使わないでください:
+      次のような形式で出力してください。各項目の最後に'|'を付け足して。単語や慣用句の項目は'-'で区切って。太字つまり*text*を使わないでください:
       1. 和訳: この研究は、複数のデータセットのラベル空間の和から予測する単一の視覚関係検出器のトレーニングに焦点を当てています。|
       2. 難しい単語 |
-      * training |
-      意味: トレーニング（名詞）、訓練（名詞）、教育（名詞）|
-      発音: /ˈtreɪnɪŋ/ |
+      * training -
+      意味: トレーニング（名詞）、訓練（名詞）、教育（名詞）-
+      発音: /ˈtreɪnɪŋ/ -
       例文: The AI system requires extensive training to perform well. （AIシステムは、適切に動作するために広範なトレーニングが必要です。） |
-      * detector |
-      意味: 検出器（名詞） |
-      発音: /dɪˈtɛktər/ |
+      * detector -
+      意味: 検出器（名詞） -
+      発音: /dɪˈtɛktər/ -
       例文: The smoke detector went off when it detected the fire. （火災を検出したとき、煙探知器が鳴った。） |
-      * predicting |
-      意味: 予測する（動詞）、予知する（動詞） |
-      発音: /prɪˈdɪktɪŋ/ |
+      * predicting -
+      意味: 予測する（動詞）、予知する（動詞） -
+      発音: /prɪˈdɪktɪŋ/ -
       例文: The weather forecast predicts rain for tomorrow. （天気予報では明日の降雨を予測しています。） |
       3. 慣用句や特殊なフレーズ |
-      * over the union of label spaces from multiple datasets |
-      意味: 和に基づいて |
+      * over the union of label spaces from multiple datasets -
+      意味: 和に基づいて -
       解説: 複数のデータセットのラベル空間の和全体にわたって予測を行うことを意味します。 |
 
       
