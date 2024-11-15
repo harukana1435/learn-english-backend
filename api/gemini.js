@@ -31,29 +31,25 @@ app.post("/api/gemini", async (req, res) => {
           - その単語を使った英語の例文とその和訳も提供してください。
       3. 慣用句や特殊なフレーズ: 文章内にある慣用句や特殊なフレーズがあれば、それらの意味を説明してください。
 
-      例:
-      "She was walking down the street when she suddenly saw a man standing in the middle of the road, looking lost."
-
-      1. 和訳:
-      彼女は通りを歩いていたとき、突然、道の真ん中に立っている男を見かけた。彼は迷子のように見えた。
-
-      2. 難しい単語:
-        **walking**
-        意味: 歩く（動詞）。移動するために足を使う動作（名詞）。
-        発音: /ˈwɔːkɪŋ/
-        例文: She was walking to the park when it started raining.
-        （彼女は公園に向かって歩いていたとき、雨が降り始めた。）
-        
-        **suddenly++
-        意味: 突然に（副詞）。予期せずに、急に。
-        発音: /ˈsʌdnli/
-        例文: Suddenly, the lights went out.
-        （突然、電気が消えた。）
-
-      3. 慣用句や特殊なフレーズ:
-        **in the middle of the road**
-        意味: 道の真ん中で。何かが完全に中央または主要な位置にあることを示す表現。
-        解説: このフレーズは物理的な位置を指しているだけでなく、道の真ん中にいるという状況が、何かが予期せずに立ち止まっている、あるいは不安定な状況であることを強調しています。特に「道の真ん中に立っている」というのは、注意を引くため、または物理的に迷っているように感じる状況を示唆します。
+      次のような形式で出力してください。各項目の最後に'|'を付け足して。太字つまり*text*を使わないでください:
+      1. 和訳: この研究は、複数のデータセットのラベル空間の和から予測する単一の視覚関係検出器のトレーニングに焦点を当てています。|
+      2. 難しい単語 |
+      * training |
+      意味: トレーニング（名詞）、訓練（名詞）、教育（名詞）|
+      発音: /ˈtreɪnɪŋ/ |
+      例文: The AI system requires extensive training to perform well. （AIシステムは、適切に動作するために広範なトレーニングが必要です。） |
+      * detector |
+      意味: 検出器（名詞） |
+      発音: /dɪˈtɛktər/ |
+      例文: The smoke detector went off when it detected the fire. （火災を検出したとき、煙探知器が鳴った。） |
+      * predicting |
+      意味: 予測する（動詞）、予知する（動詞） |
+      発音: /prɪˈdɪktɪŋ/ |
+      例文: The weather forecast predicts rain for tomorrow. （天気予報では明日の降雨を予測しています。） |
+      3. 慣用句や特殊なフレーズ |
+      * over the union of label spaces from multiple datasets |
+      意味: 和に基づいて |
+      解説: 複数のデータセットのラベル空間の和全体にわたって予測を行うことを意味します。 |
 
       
 
