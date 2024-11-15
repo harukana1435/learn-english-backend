@@ -41,7 +41,7 @@ app.post("/api/gemini", async (req, res) => {
       //const chunkText = chunk.text();
       const chunkText = chunk.text();
       console.log(chunkText);
-      text_text += chunkText;
+      result_text += chunkText;
     }
     // レスポンスの整形
     const formattedResponse = {
