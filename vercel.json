@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/llama2.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "vercel-php@0.5.0"
     }
   }
 }
