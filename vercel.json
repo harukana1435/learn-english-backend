@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "functions": {
+    "api/llama2.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
