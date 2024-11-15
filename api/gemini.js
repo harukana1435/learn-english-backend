@@ -63,6 +63,13 @@ app.post("/api/gemini", async (req, res) => {
     const result = await model.generateContentStream(prompt);
 
     let result_text = "";
+    let timeoutFlag = false;
+
+    const timeout = setTimeout(() => {
+      timeoutFlag = true;
+      res.status(504).json({ error: "Request Timeout" });
+    }, 60000); // タイムアウトを60秒に設定
+
     for await (const chunk of result.stream) {
       //const chunkText = chunk.text();
       const chunkText = chunk.text();
@@ -74,11 +81,14 @@ app.post("/api/gemini", async (req, res) => {
       result: result_text, // ストリームから取得した結果
     };
 
-    // クライアントに結果を返す
-    res.json(formattedResponse);
+    clearTimeout(timeout); // タイムアウトを解除
+
+    if (!timeoutFlag) {
+      res.json({ result: result_text });
+    }
   } catch (error) {
     console.error("Error calling Gemini API:", error);
-    res.status(500).json({ error: "Failed to call Llama2 API" });
+    res.status(500).json({ error: "Failed to call Gemini API" });
   }
 });
 
