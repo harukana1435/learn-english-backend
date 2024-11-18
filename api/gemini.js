@@ -39,14 +39,14 @@ app.post("/api/gemini", async (req, res) => {
 1. 和訳: 例文の和訳を記載します。|
 2. 難しい単語 |
 単語: example1 -
-意味: 例として記載する内容 -
+意味: 例として記載する内容（名詞）、別の意味（動詞） -
 発音: /example/ -
 例文: This is an example sentence. （これは例文です。） -
 同義語: synonym1, synonym2 -
 反義語: antonym1, antonym2 -
 よく一緒に使われる単語: common phrase1, common phrase2 |
 単語: example2 -
-意味: 例として記載する内容 -
+意味: 例として記載する内容（形容詞）、別の意味（副詞） -
 発音: /example/ -
 例文: Another example sentence. （別の例文です。） -
 同義語: synonym3, synonym4 -
