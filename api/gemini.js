@@ -26,7 +26,7 @@ app.post("/api/gemini", async (req, res) => {
 
 1. 和訳: 文章全体を自然な日本語で、意味を損なわない範囲で直訳してください。|
 2. 難しい単語: 文章内で難しい単語や専門的な単語をいくつか挙げ、それぞれに対して以下の情報を提供してください。複数の単語を提示し、各単語について詳細を述べてください。
-   - 原文中での単語の意味を日本語で説明してください。その単語に別の意味があれば、その意味もまとめて教えてください。
+   - 単語の意味を日本語で説明してください。その単語に別の意味があれば、その意味もまとめて教えてください。
    - 発音（IPA表記）を教えてください。
    - その単語を使った英語の例文とその和訳を提供してください。
    - 同義語、反義語、よく一緒に使われる単語を挙げてください。|
@@ -39,14 +39,14 @@ app.post("/api/gemini", async (req, res) => {
 1. 和訳: 例文の和訳を記載します。|
 2. 難しい単語 |
 単語: example1 -
-意味: 原文中での意味[名詞]、別の意味[動詞] -
+意味: meaning1[word class1]、meaning2[word class2] -
 発音: /example/ -
 例文: This is an example sentence. （これは例文です。） -
 同義語: synonym1, synonym2 -
 反義語: antonym1, antonym2 -
 よく一緒に使われる単語: common phrase1, common phrase2 |
 単語: example2 -
-意味: 原文中での意味[形容詞]、別の意味[副詞] -
+意味: meaning3[sord class3]、meaning4[word class4] -
 発音: /example/ -
 例文: Another example sentence. （別の例文です。） -
 同義語: synonym3, synonym4 -
