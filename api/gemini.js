@@ -16,7 +16,7 @@ app.post("/api/gemini", async (req, res) => {
   try {
     const { text } = req.body;
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     // 日本語解説を指示するプロンプトを作成
     const prompt = `
